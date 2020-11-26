@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: production
+  mail:
+    host: localhost
+    port: 1025
+    username: ""
+    password: ""
+
+logging:
+  level:
+    com.coyoapp.donations: TRACE
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
